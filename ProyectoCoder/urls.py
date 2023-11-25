@@ -16,7 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from ProyectoCoder.views import mostrar_fecha_actual
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('fecha-actual/', mostrar_fecha_actual),
 ]
