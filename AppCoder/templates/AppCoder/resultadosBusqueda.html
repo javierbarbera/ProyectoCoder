@@ -1,10 +1,18 @@
+{% if curso %}
+
 <p>Estamos buscando el: {{camada}}</p>
 
-{% if cursos %}
+
 <ul>
-{% for curso in cursos %}
-    <li>{{curso.nombre}}</li>
+{% for curso in curso %}
+    <li>{{curso.curso}}</li>
     <li>{{curso.camada}}</li>
 {% endfor %}
 </ul>
+{% else %}
+
+<p>No hay datos con esa descripción.</p>
+
 {% endif %}
+
+<p style = "color: red;">{{respuesta}}</p>
