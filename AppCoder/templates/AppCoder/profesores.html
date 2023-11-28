@@ -1,12 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body style = "background-color: grey;">
-    <h1>Este template es para los profesores</h1>
-    
-</body>
-</html>
+{% extends "AppCoder/padre.html" %}
+
+
+{% load static %}
+
+
+{% block contenidoQueCambia %}
+
+    <!--Aquí va lo que cambia, y lo asociado a esta vista-->
+
+<h1>Profesores</h1>
+<p>Detalle de profesores de la institución</p>
+
+{% endblock contenidoQueCambia %}

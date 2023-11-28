@@ -1,12 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body style="background-color: silver;">
-    <h1>Este template es para el inicio</h1>
-    
-</body>
-</html>
+{% extends "AppCoder/padre.html" %}
+
+
+{% load static %}
+
+
+{% block contenidoQueCambia %}
+
+<h1>Este es el título del inicio que cambio</h1>
+<p>Se ha heredado todo desde la plantilla padre</p>
+<h3>En el hijo, inicio.html, casi no hay nada :)</h3>
+
+{% endblock contenidoQueCambia %}
+
+
+
+ 
