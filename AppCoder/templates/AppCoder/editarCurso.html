@@ -6,18 +6,20 @@
 
 {% block contenidoQueCambia %}
 
-{% if mi_formulario.errors %}
-<p style = "color:red">Están mal los datos, revisar</p>
+<h1>Formulario - Editar Curso</h1>
+
+{% if miFormulario.errors %}
+
+<p style="color: red;">Están mal los datos, revisar</p>
+
 {% endif %}
 
-<form action=""     method="post">{% csrf_token %}
+<form action=""     method="POST">{% csrf_token %}
     <table width="40%"> 
-        {{mi_formulario.as_table}}
+        {{miFormulario.as_table}}
     </table>
     <input type = "submit" value = "Enviar">
 </form>
-
-<h1>Cursos</h1>
 
 
 {% endblock contenidoQueCambia %}
